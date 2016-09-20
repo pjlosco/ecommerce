@@ -1,20 +1,19 @@
-@*
- * This template takes a single argument, a String containing a
- * message to display.
- *@
-@(message: String)
+@(title: String)
 
-@*
- * Call the `main` template with two arguments. The first
- * argument is a `String` with the title of the page, the second
- * argument is an `Html` object containing the body of the page.
- *@
-@main("Welcome to Play") {
+<!DOCTYPE html>
 
-    @*
-     * Get an `Html` object by calling the built-in Play welcome
-     * template and passing a `String` message.
-     *@
-    @play20.welcome(message, style = "Java")
+<html lang="en">
 
-}
+    @header(title)
+
+    <body>
+        Ecommerce landing page.
+        <ul>Stuff to get done
+            <li>SQL Setup</li>
+            <li>Auth a login</li>
+            <li>Admin - create product</li>
+            <li>Get product info</li>
+            <li>Get list of products</li>
+        </ul>
+    </body>
+</html>
