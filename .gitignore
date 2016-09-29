@@ -8,13 +8,11 @@ target
 /RUNNING_PID
 bin/
 data/
-db/
 dist/
 logs/
 test-result/
 lib/
 tmp/
-modules/
 .DS_Store
 classes/
 out/

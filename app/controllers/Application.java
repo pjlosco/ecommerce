@@ -5,6 +5,10 @@ import play.mvc.*;
 
 import views.html.*;
 
+/**
+ * Used to test entire service. This connects to a front end design
+ */
+
 public class Application extends Controller {
 
 
@@ -26,12 +30,12 @@ public class Application extends Controller {
         // do auth
             // success - send key
             // failed - give info for failure
-        return ok(json.render("JSON"));
+        return ok(login.render("login"));
     }
 
     public Result logout() {
-        // TODO - do we need this?
-        return ok(json.render("JSON"));
+        // TODO - re route to login after cleaning up some things
+        return ok(logout.render("logout"));
     }
 
     public Result account() {
@@ -41,32 +45,32 @@ public class Application extends Controller {
         Payment info
         Address info
          */
-        return ok(json.render("JSON"));
+        return ok(account.render("login"));
     }
 
     public Result sale() {
         // TODO - should have basic info on a campaign sale
-        return ok(json.render("JSON"));
+        return ok(sale.render("sale"));
     }
 
     public Result productDetails() {
         // TODO - info specific to a product, size, color, images, etc
-        return ok(json.render("JSON"));
+        return ok(productDetails.render("JSON"));
     }
 
     public Result productListing() {
         // TODO - collection of products with limited info. 1 med sized image remove un needed product data
-        return ok(json.render("JSON"));
+        return ok(productListing.render("JSON"));
     }
 
     public Result cart() {
         // TODO - info of products in a users cart. will also strip out some data. 1 small image
-        return ok(json.render("JSON"));
+        return ok(cart.render("JSON"));
     }
 
     public Result checkout() {
         // TODO - ???
-        return ok(json.render("JSON"));
+        return ok(checkout.render("JSON"));
     }
 
 

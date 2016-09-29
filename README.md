@@ -37,3 +37,7 @@ Start the console like so:
 The compilation will also be triggered each time you change a source file.
 
     run
+
+
+## Database info
+Need to install Postgres
