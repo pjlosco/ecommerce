@@ -1,4 +1,4 @@
-package controllers.db;
+package controllers.database;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;

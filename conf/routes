@@ -6,6 +6,7 @@
 GET     /                           controllers.Application.index()
 
 # Typical endpoints
+GET     /register                   controllers.Application.register()
 GET     /login                      controllers.Application.login()
 GET     /logout                     controllers.Application.logout()
 GET     /account                    controllers.Application.account()
@@ -19,8 +20,7 @@ GET     /checkout                   controllers.Application.checkout()
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
 
-# Better API endpoint, could use ?method=nameOfMethod as param instead of unique endpoints
-GET     /services/rest              controllers.services.Rest.index()
-
-
-mysite.com/services/rest?method=login&user=name&password=12345
+# API
+GET     /api/rest                   controllers.services.Rest.index()
+GET     /api/rest/register          controllers.services.Rest.register()
+GET     /api/rest/login             controllers.services.Rest.login()

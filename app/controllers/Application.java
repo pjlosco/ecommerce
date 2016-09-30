@@ -35,7 +35,7 @@ public class Application extends Controller {
 
     public Result logout() {
         // TODO - re route to login after cleaning up some things
-        return ok(logout.render("logout"));
+        return redirect("/login");
     }
 
     public Result account() {
